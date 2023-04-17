@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 dbt-postgres = "*"
+dbt-mysql = "*"
 
 [dev-packages]
 
