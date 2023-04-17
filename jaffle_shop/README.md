@@ -1,15 +1,26 @@
-Welcome to your new dbt project!
+# My dbt Project
+This project is aimed at building a data warehouse using dbt. 
 
-### Using the starter project
+### Environment Variables Setup
 
-Try running the following commands:
-- dbt run
-- dbt test
+```bash
+export DBT_PROFILES_DIR=../jaffle_shop
+export POSTGRES_USERNAME=[yours]
+export POSTGRES_PW=[yours]
+export MYSQL_USERNAME=[yours]
+export MYSQL_PW=[yours]
+```
 
+### Getting Started
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+To get started with this dbt project, follow the steps below:
+
+1. Clone the repository to your local environment.
+2. Set up the required environment variables as mentioned above.
+3. Install the dependencies by running 
+   ```
+   pipenv install
+   ```
+4. Run the dbt commands using the desired profile and target.
+
+😁 Happy data modeling with dbt!
