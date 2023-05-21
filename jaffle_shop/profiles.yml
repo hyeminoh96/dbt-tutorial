@@ -1,5 +1,5 @@
 jaffle_shop:
-  target: mysql
+  target: postgres
   outputs:
     postgres:
       type: postgres
@@ -9,11 +9,3 @@ jaffle_shop:
       port: 5432
       dbname: dbt-tutorial # or database instead of dbname
       schema: jaffle_shop
-    mysql:
-      type: mysql
-      server: localhost
-      port: 3306
-      schema: building-register
-      username: "{{ env_var('MYSQL_USERNAME') }}"
-      password: "{{ env_var('MYSQL_PW') }}"
-      ssl_disabled: True
