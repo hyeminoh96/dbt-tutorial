@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-dbt-postgres = "*"
+dbt-postgres = "1.4.0"
 
 [dev-packages]
 
